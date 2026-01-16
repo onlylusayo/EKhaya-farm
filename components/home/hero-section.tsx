@@ -8,7 +8,7 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="/aerial-view-of-lush-green-agricultural-farmland-in.jpg"
+          src="/hero-farm.png"
           alt="Ekhaya Farms agricultural fields"
           className="w-full h-full object-cover"
         />
