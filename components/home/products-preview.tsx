@@ -6,17 +6,17 @@ const products = [
   {
     name: "Fresh Beef",
     description: "High-quality beef from locally raised cattle",
-    image: "/fresh-beef-cuts.jpg",
+    image: "/b1.png",
   },
   {
     name: "Goat Meat",
     description: "Naturally raised goat meat, rich and flavorful",
-    image: "/fresh-goat-meat.jpg",
+    image: "/g1.png",
   },
   {
     name: "Mutton & Lamb",
     description: "Tender sheep meat, carefully processed",
-    image: "/fresh-mutton-lamb.jpg",
+    image: "/m1.png",
   },
 ]
 
