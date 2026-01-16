@@ -1,21 +1,23 @@
 const features = [
-  {
-    title: "From Our Fields",
-    description:
-      "Every product starts at our carefully managed farms across Malawi, where sustainable practices meet traditional knowledge.",
-    image: "/field-image.png",
-  },
-  {
-    title: "Quality Processing",
-    description: "State of the art facilities ensure our produce maintains peak freshness from harvest to store.",
-    image: "/quality-pro.png",
-  },
-  {
-    title: "To Your Community",
-    description:
-      "Our network of Ekhaya Farm Food Stores delivers farm-fresh goodness to neighborhoods across all 8 districts.",
-    image: "/meat-shelf.png",
-  },
+{
+  title: "From Our Fields",
+  description:
+    "Our livestock are raised on open grazing fields across Malawi, where cattle, goats, and sheep are cared for using responsible farming practices that prioritize animal health, natural feed, and ethical handling from birth.",
+  image: "/field-image.png",
+},
+{
+  title: "Quality Processing",
+  description:
+    "At our abattoir, livestock are processed under strict hygiene and quality standards, ensuring safe, fresh, and traceable meat while maintaining respect for animal welfare at every stage.",
+  image: "/quality-pro.png",
+},
+{
+  title: "To Your Community",
+  description:
+    "Processed meat from our farms is supplied directly to Ekhaya Farm Food Stores, connecting local livestock farmers with communities across all 8 districts through reliable, transparent distribution.",
+  image: "/meat-shelf.png",
+},
+
 ];
 
 export function FeaturesSection() {

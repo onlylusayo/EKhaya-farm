@@ -3,22 +3,23 @@ import { Quote } from "lucide-react"
 const testimonials = [
 {
   quote:
-    "Seeing families enjoy healthier meals because of the produce we grow and supply is what makes my work at Ekhaya Farms truly meaningful.",
+    "Seeing families enjoy healthier meals because of the quality meat we raise and supply from our livestock farms is what makes my work at Ekhaya Farms truly meaningful.",
   author: "Grace Banda",
   role: "Customer Relations Officer",
 },
 {
   quote:
-    "Working closely with our partner farmers and supporting them with training and fair pricing reminds me every day that Ekhaya Farms is about people, not just produce.",
+    "Working closely with our livestock farmers and supporting them with training, animal welfare guidance, and fair pricing reminds me every day that Ekhaya Farms is about people, not just meat.",
   author: "James Phiri",
   role: "Farmer Partnership Coordinator",
 },
 {
   quote:
-    "Knowing that restaurants rely on us for fresh, locally-grown produce motivates our team to maintain high standards across every Ekhaya store.",
+    "Knowing that households and restaurants rely on us for fresh, responsibly processed beef, goat, and sheep meat motivates our team to maintain high standards across every Ekhaya Farm Food Store.",
   author: "Sarah Mwale",
   role: "Retail & Hospitality Liaison",
 },
+
 ]
 
 export function TestimonialsSection() {
