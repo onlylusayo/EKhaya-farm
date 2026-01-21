@@ -34,7 +34,7 @@ export function Footer() {
               <span className="font-serif text-xl font-bold">Ekhaya Farms</span>
             </Link>
             <p className="text-black text-sm leading-relaxed">
-              Growing Malawi, Feeding Communities. Trusted agricultural excellence across all 8 districts.
+              Growing Malawi, Feeding Communities. Trusted agricultural excellence across all 8 outlets.
             </p>
             <div className="flex items-center gap-3">
               <a

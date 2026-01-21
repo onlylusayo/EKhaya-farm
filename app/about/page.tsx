@@ -1,40 +1,39 @@
-import { Navbar } from "@/components/navbar"
-import { Target, Eye, Heart, Shield, Users, Sprout } from "lucide-react"
+import { Target, Eye, Heart, Shield, Users, Drumstick } from "lucide-react"
 
 const values = [
   {
     icon: Heart,
     title: "Integrity",
     description:
-      "We operate with honesty and transparency in all our dealings with farmers, customers, and partners.",
+      "We operate with honesty and transparency across every stage of livestock farming, meat handling, and retail operations.",
   },
   {
-    icon: Sprout,
-    title: "Sustainability",
+    icon: Drumstick,
+    title: "Responsible Farming",
     description:
-      "Environmental stewardship is at the core of everything we do, ensuring a greener future.",
+      "We raise livestock responsibly, prioritizing animal welfare, food safety, and sustainable farming practices.",
   },
   {
     icon: Users,
     title: "Community",
     description:
-      "We believe in empowering local communities through fair employment and farmer partnerships.",
+      "We empower local communities through fair employment, livestock partnerships, and reliable access to quality meat.",
   },
   {
     icon: Shield,
     title: "Quality",
     description:
-      "Uncompromising standards ensure only the finest produce reaches our customers.",
-  }, 
+      "Uncompromising standards ensure only safe, fresh, and high-quality meat reaches our customers.",
+  },   
 ]
 
 const milestones = [
-  { year: "2009", event: "Ekhaya Farms founded in Lilongwe" },
-  { year: "2012", event: "First Ekhaya Farm Food Store opens" },
-  { year: "2015", event: "Expanded to 3 districts" },
-  { year: "2018", event: "Launched farmer partnership program" },
-  { year: "2021", event: "Reached all 8 districts of Malawi" },
-  { year: "2024", event: "Serving 50,000+ families daily" },
+  { year: "2009", event: "Ekhaya Farms founded in Lilongwe as a livestock farming operation" },
+  { year: "2012", event: "First Ekhaya Farm Food Store opens, selling fresh meat directly to customers" },
+  { year: "2015", event: "Expanded meat distribution to 3 districts" },
+  { year: "2018", event: "Launched structured livestock farmer partnership program" },
+  { year: "2021", event: "Reached all 8 districts of Malawi through Ekhaya Farm Food Stores" },
+  { year: "2024", event: "Serving over 50,000 families daily with quality meat products" },
 ]
 
 export default function AboutPage() {
@@ -50,13 +49,14 @@ export default function AboutPage() {
               </span>
 
               <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#b5942f] mb-6 text-balance">
-                Our Story: Rooted in Malawian Soil
+                Our Story: From Livestock to Table
               </h1>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Ekhaya Farms was born from a vision to transform agriculture in Malawi.
-                What started as a small family farm has grown into a nationwide network
-                dedicated to food security, sustainability, and community empowerment.
+                Ekhaya Farms was founded with a clear purpose: to provide Malawian
+                families with meat they can trust. What began as a small livestock
+                farm has grown into a nationwide network delivering safe,
+                high-quality meat through our own Ekhaya Farm Food Stores.
               </p>
             </div>
           </div>
@@ -76,9 +76,9 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  To provide high-quality, sustainably-produced agricultural products
-                  to every corner of Malawi, while empowering local farmers and
-                  strengthening food security for all communities we serve.
+                  To responsibly raise livestock and supply safe, high-quality
+                  meat products across Malawi, while supporting local communities
+                  and strengthening national food security.
                 </p>
               </div>
 
@@ -92,9 +92,9 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  To be Malawi&apos;s most trusted agricultural brand, recognized for
-                  excellence in sustainable farming, community impact, and ensuring
-                  every Malawian family has access to fresh, nutritious food.
+                  To be Malawi&apos;s most trusted meat brand, recognized for
+                  responsible livestock farming, consistent quality, and
+                  transparency from farm to store.
                 </p>
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <img
                 src="/image.png"
-                alt="Ekhaya Farms team"
+                alt="Ekhaya Farms livestock and meat team"
                 className="rounded-2xl w-full object-cover"
               />
 
@@ -204,15 +204,15 @@ export default function AboutPage() {
                 </h2>
 
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Our team is made up of passionate agriculturalists, community
-                  leaders, and dedicated professionals who share a common goal:
-                  making quality food accessible to every Malawian family.
+                  Our team consists of dedicated livestock farmers, meat
+                  handlers, butchers, and retail professionals who take pride in
+                  delivering quality meat to Malawian families.
                 </p>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  From our farmers in the fields to our store managers in every
-                  district, each member of the Ekhaya family plays a vital role
-                  in our mission to grow Malawi and feed communities.
+                  From caring for animals on our farms to serving customers in
+                  our stores, every member of the Ekhaya family plays a vital
+                  role in maintaining trust, quality, and consistency.
                 </p>
               </div>
             </div>

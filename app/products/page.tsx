@@ -32,7 +32,7 @@ const productCategories = [
   {
     name: "Processed Meat Products",
     description:
-      "Value-added meat products processed for extended shelf life while maintaining quality and safety.",
+      "Value added meat products processed for extended shelf life while maintaining quality and safety.",
     products: [
       { name: "Sausages", image: "/meat-splash-3.jpg" },
       { name: "Smoked Meat", image: "/meat-splash-4.jpg" },
@@ -52,9 +52,9 @@ const productCategories = [
     ],
   },
   {
-    name: "Non-Edible By-Products",
+    name: "Non Edible By Products",
     description:
-      "Non-edible meat by-products handled responsibly as part of sustainable abattoir operations.",
+      "Non edible meat by products handled responsibly as part of sustainable abattoir operations.",
     products: [
       { name: "Bones", image: "/meat-splash-1.jpg" },
       { name: "Hides & Skins", image: "/meat-splash-2.jpg" },
