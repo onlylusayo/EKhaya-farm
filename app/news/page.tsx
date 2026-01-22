@@ -1,196 +1,146 @@
-"use client";
+"use client"
 
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
-import { Calendar, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import Link from "next/link"
+import { Calendar, ArrowRight } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
-const newsArticles = [
+export const newsArticles = [
   {
+    slug: "ekhaya-expands-to-karonga",
     title: "Ekhaya Farms Expands to Karonga District",
     excerpt:
-      "We're excited to announce the opening of our newest store in Karonga, bringing farm-fresh produce and livestock products to northern Malawi.",
+      "We are proud to open our newest Ekhaya Farm Food Store in Karonga, bringing trusted, high-quality meat products to northern Malawi.",
     date: "December 15, 2025",
     category: "Announcement",
     image: "/placeholder.svg?height=300&width=500",
+    content: `
+Ekhaya Farms is pleased to announce the expansion of our operations to Karonga District.
+
+This new Ekhaya Farm Food Store will provide residents with access to premium beef, goat meat, and poultry produced through responsible livestock farming practices. By expanding north, we are strengthening Malawi’s meat supply chain and ensuring families have access to safe, nutritious protein.
+
+The Karonga store also creates employment opportunities and supports local livestock farmers through structured partnerships. This expansion reflects our long-term commitment to livestock development and food security across Malawi.
+    `,
   },
   {
+    slug: "record-livestock-growth-season",
     title: "Record Livestock Growth This Season",
     excerpt:
-      "Thanks to sustainable farming practices, both maize harvests and livestock growth exceeded expectations, demonstrating our integrated farming success.",
+      "Improved animal health programs and responsible feeding practices have resulted in record livestock growth across our farms.",
     date: "December 10, 2025",
     category: "Farm Update",
     image: "/placeholder.svg?height=300&width=500",
+    content: `
+This season has been one of the most successful in Ekhaya Farms’ history.
+
+Through proper animal nutrition, veterinary care, and ethical breeding programs, our cattle, goats, and poultry recorded exceptional growth rates. Healthy livestock directly translates into better meat quality for our customers.
+
+These results demonstrate the value of responsible livestock management and continued farmer training, which remain central to our farming model.
+    `,
   },
   {
+    slug: "farmer-training-program",
     title: "Community Training Program Graduates 100 Farmers",
     excerpt:
-      "Our farmer partnership program celebrated another milestone as 100 local farmers learned advanced livestock management techniques, ensuring healthier animals and higher-quality meat and poultry production.",
+      "Over 100 livestock farmers have completed advanced training in animal health, feeding, and welfare practices.",
     date: "November 28, 2025",
     category: "Community",
     image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    title: "New Solar Installation Powers Livestock Facilities",
-    excerpt:
-      "Ekhaya Farms’ livestock facilities are now sustainably powered by 80% renewable energy, improving efficiency and animal welfare while reducing environmental impact.",
-    date: "November 15, 2025",
-    category: "Sustainability",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    title: "Poultry Season Special at All Stores",
-    excerpt:
-      "It’s peak season for our ethically raised poultry! Visit your nearest Ekhaya Farm Food Store for high-quality, farm-fresh meat and poultry products.",
-    date: "November 5, 2025",
-    category: "Seasonal",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-  {
-    title: "Partnership with Ministry of Agriculture",
-    excerpt:
-      "Ekhaya Farms signs an MOU with the Ministry of Agriculture to support national livestock development initiatives and improve meat and poultry production standards.",
-    date: "October 20, 2025",
-    category: "Partnership",
-    image: "/placeholder.svg?height=300&width=500",
-  },
-];
+    content: `
+Ekhaya Farms recently celebrated the graduation of 100 livestock farmers from our training program.
 
-const upcomingEvents = [
-  {
-    title: "Farmers Market Day",
-    date: "January 15, 2026",
-    location: "Lilongwe City Centre Store",
-    description: "Meet our livestock farmers and enjoy fresh, ethically raised meat and poultry samples.",
+The program focuses on animal welfare, disease prevention, proper feeding, and sustainable livestock practices. Graduates are now better equipped to raise healthy animals and supply high-quality meat to local markets.
+
+This initiative strengthens rural livelihoods while ensuring consistent meat standards across our supply chain.
+    `,
   },
-  {
-    title: "Sustainable Livestock Workshop",
-    date: "January 25, 2026",
-    location: "Ekhaya Training Centre, Lilongwe",
-    description: "Free workshop on sustainable livestock management and best practices for animal health and welfare.",
-  },
-  {
-    title: "School Nutrition Program Launch",
-    date: "February 5, 2026",
-    location: "Blantyre Primary Schools",
-    description: "Expanding our school nutrition initiative to 50 more schools, providing healthy, high-quality meat and poultry products.",
-  },
-];
+]
 
 export default function NewsPage() {
   return (
-    <>
-      <main>
-        {/* Hero */}
-        <section className="pt-32 pb-20 bg-muted/30">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="max-w-3xl">
-              <span className="text-black font-medium text-sm tracking-wider uppercase mb-4 block">
-                News & Updates
+    <main>
+      {/* Hero */}
+      <section className="pt-32 pb-20 bg-muted/30">
+        <div className="max-w-6xl mx-auto px-4 max-w-3xl">
+          <span className="text-sm uppercase tracking-wider font-medium block mb-4">
+            News & Updates
+          </span>
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#b5942f] mb-6">
+            Stories from Our Farms
+          </h1>
+          <p className="text-muted-foreground text-lg">
+            Updates, announcements, and insights from Ekhaya Farms — focused on livestock,
+            meat production, and community impact.
+          </p>
+        </div>
+      </section>
+
+      {/* Featured Article */}
+      <section className="py-16 bg-background">
+        <div className="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-8 items-center">
+          <img
+            src={newsArticles[0].image}
+            alt={newsArticles[0].title}
+            className="rounded-2xl w-full object-cover"
+          />
+
+          <div>
+            <div className="flex items-center gap-4 mb-4">
+              <span className="px-3 py-1 rounded-full bg-[#b5942f]/10 text-[#b5942f] text-xs">
+                {newsArticles[0].category}
               </span>
-              <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#b5942f] mb-6 text-balance">
-                Stay Connected with Ekhaya
-              </h1>
-              <p className="text-muted-foreground text-lg leading-relaxed">
-                The latest news, farm updates, livestock highlights, community stories,
-                and announcements from Ekhaya Farms from crop fields to livestock units.
-              </p>
+              <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                <Calendar className="w-4 h-4 text-[#b5942f]" />
+                {newsArticles[0].date}
+              </span>
             </div>
-          </div>
-        </section>
 
-        {/* Featured Article */}
-        <section className="py-16 bg-background">
-          <div className="max-w-6xl mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="overflow-hidden rounded-2xl">
+            <h2 className="font-serif text-3xl font-bold mb-4">
+              {newsArticles[0].title}
+            </h2>
+
+            <p className="text-muted-foreground mb-6">
+              {newsArticles[0].excerpt}
+            </p>
+
+            <Link href={`/news/${newsArticles[0].slug}`}>
+              <Button className="bg-[#b5942f] text-black gap-2">
+                Read Full Story <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* News Grid */}
+      <section className="py-20 bg-muted/30">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="font-serif text-2xl font-bold text-[#b5942f] mb-8">
+            Latest News
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {newsArticles.slice(1).map(article => (
+              <Link
+                key={article.slug}
+                href={`/news/${article.slug}`}
+                className="bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition"
+              >
                 <img
-                  src={newsArticles[0].image || "/placeholder.svg"}
-                  alt={newsArticles[0].title}
-                  className="w-full aspect-[4/3] object-cover"
+                  src={article.image}
+                  alt={article.title}
+                  className="w-full aspect-[5/3] object-cover"
                 />
-              </div>
-              <div>
-                <div className="flex items-center gap-4 mb-4">
-                  <span className="px-3 py-1 rounded-full bg-[#b5942f]/10 text-[#b5942f] text-xs font-medium">
-                    {newsArticles[0].category}
-                  </span>
-                  <span className="text-muted-foreground text-sm flex items-center gap-1">
-                    <Calendar className="w-4 h-4 text-[#b5942f]" />
-                    {newsArticles[0].date}
-                  </span>
+                <div className="p-5">
+                  <h3 className="font-semibold mb-2">{article.title}</h3>
+                  <p className="text-sm text-muted-foreground">
+                    {article.excerpt}
+                  </p>
                 </div>
-                <h2 className="font-serif text-3xl font-bold text-foreground mb-4">
-                  {newsArticles[0].title}
-                </h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  {newsArticles[0].excerpt}
-                </p>
-                <Button className="rounded-xl gap-2 bg-[#b5942f] text-black hover:bg-[#d4af37]">
-                  Read Full Story
-                  <ArrowRight className="w-4 h-4" />
-                </Button>
-              </div>
-            </div>
+              </Link>
+            ))}
           </div>
-        </section>
-
-        {/* News Grid */}
-        <section className="py-20 bg-muted/30">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="font-serif text-2xl font-bold text-[#b5942f] mb-8">Latest News</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {newsArticles.slice(1).map((article, index) => (
-                <article
-                  key={index}
-                  className="bg-card rounded-2xl border border-border overflow-hidden hover:shadow-lg transition-shadow group"
-                >
-                  <div className="overflow-hidden">
-                    <img
-                      src={article.image || "/placeholder.svg"}
-                      alt={article.title}
-                      className="w-full aspect-[5/3] object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-5">
-                    <div className="flex items-center gap-3 mb-3">
-                      <span className="px-2 py-0.5 rounded-full bg-[#b5942f]/10 text-[#b5942f] text-xs font-medium">
-                        {article.category}
-                      </span>
-                      <span className="text-muted-foreground text-xs flex items-center gap-1">
-                        <Calendar className="w-4 h-4 text-[#b5942f]" />
-                        {article.date}
-                      </span>
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-2 line-clamp-2">{article.title}</h3>
-                    <p className="text-muted-foreground text-sm line-clamp-2">{article.excerpt}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Upcoming Events */}
-        <section className="py-20 bg-background">
-          <div className="max-w-6xl mx-auto px-4">
-            <h2 className="font-serif text-2xl font-bold text-[#b5942f] mb-8">Upcoming Events</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {upcomingEvents.map((event, index) => (
-                <div key={index} className="bg-card rounded-2xl p-6 border border-border">
-                  <div className="flex items-center gap-2 text-[#b5942f] text-sm font-medium mb-3">
-                    <Calendar className="w-4 h-4" />
-                    {event.date}
-                  </div>
-                  <h3 className="font-semibold text-lg text-foreground mb-2">{event.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-3">{event.description}</p>
-                  <p className="text-xs text-muted-foreground">{event.location}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      </main>
-    </>
-  );
+        </div>
+      </section>
+    </main>
+  )
 }
