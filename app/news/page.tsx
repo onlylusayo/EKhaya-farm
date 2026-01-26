@@ -102,7 +102,7 @@ export default function NewsPage() {
               {newsArticles[0].excerpt}
             </p>
 
-            <Link href={`/news/${newsArticles[0].slug}`}>
+            <Link href={`/data/${newsArticles[0].slug}`}>
               <Button className="bg-[#b5942f] text-black gap-2">
                 Read Full Story <ArrowRight className="w-4 h-4" />
               </Button>
@@ -122,7 +122,7 @@ export default function NewsPage() {
             {newsArticles.slice(1).map(article => (
               <Link
                 key={article.slug}
-                href={`/news/${article.slug}`}
+                href={`/data/${article.slug}`}
                 className="bg-card rounded-2xl border overflow-hidden hover:shadow-lg transition"
               >
                 <img
