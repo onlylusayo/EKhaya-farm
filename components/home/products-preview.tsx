@@ -14,7 +14,7 @@ const products = [
     image: "/g1.png",
   },
   {
-    name: "Mutton & Lamb",
+    name: "Mutton and Lamb",
     description: "Tender sheep meat, carefully processed",
     image: "/m1.png",
   },

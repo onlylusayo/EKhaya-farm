@@ -42,10 +42,10 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="/logo/ekhaya-fa.png"
+            src="/logo/Ekhaya-SVG.svg"
             alt="Ekhaya Farms Logo"
-            width={60}
-            height={50}
+            width={70}
+            height={60}
             className="object-contain"
           />
         </Link>

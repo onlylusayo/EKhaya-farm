@@ -7,7 +7,7 @@ export function CTASection() {
     <section className="py-24 bg-black text-background">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h2 className="font-serif text-3xl sm:text-4xl font-bold mb-6 text-balance">
-          Ready to Experience Farm-Fresh Quality?
+          Ready to Experience Farm Fresh Quality?
         </h2>
         <p className="text-background/70 text-lg mb-10 max-w-2xl mx-auto leading-relaxed">
           Visit your nearest Ekhaya Farm Food Store and discover the difference that sustainable, locally grown produce
