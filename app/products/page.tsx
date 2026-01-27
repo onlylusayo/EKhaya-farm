@@ -10,9 +10,9 @@ const productCategories = [
     description:
       "Professionally slaughtered and hygienically processed red meat sourced from cattle, goats, and sheep.",
     products: [
-      { name: "Beef (Cattle)", image: "/meat-splash-1.jpg" },
+      { name: "Beef", image: "/meat-splash-1.jpg" },
       { name: "Goat Meat", image: "/meat-splash-2.jpg" },
-      { name: "Mutton (Sheep Meat)", image: "/meat-splash-3.jpg" },
+      { name: "Mutton", image: "/meat-splash-3.jpg" },
       { name: "Mixed Red Meat Cuts", image: "/meat-splash-4.jpg" },
     ],
   },
@@ -24,8 +24,8 @@ const productCategories = [
       { name: "Steak Cuts", image: "/meat-splash-1.jpg" },
       { name: "Ribs", image: "/meat-splash-2.jpg" },
       { name: "Brisket", image: "/meat-splash-3.jpg" },
-      { name: "Chunks & Portions", image: "/meat-splash-4.jpg" },
-      { name: "Bone-in Cuts", image: "/meat-splash-1.jpg" },
+      { name: "Chunks and Portions", image: "/meat-splash-4.jpg" },
+      { name: "Bone in Cuts", image: "/meat-splash-1.jpg" },
       { name: "Boneless Cuts", image: "/meat-splash-2.jpg" },
     ],
   },
@@ -57,7 +57,7 @@ const productCategories = [
       "Non edible meat by products handled responsibly as part of sustainable abattoir operations.",
     products: [
       { name: "Bones", image: "/meat-splash-1.jpg" },
-      { name: "Hides & Skins", image: "/meat-splash-2.jpg" },
+      { name: "Hides and Skins", image: "/meat-splash-2.jpg" },
       { name: "Animal Fat", image: "/meat-splash-3.jpg" },
     ],
   },
