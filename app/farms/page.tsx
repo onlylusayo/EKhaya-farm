@@ -56,7 +56,7 @@ const livestock = [
 /* ------------------ Production Process ------------------ */
 const livestockProduction = [
   {
-    stage: "Breeding & Selection",
+    stage: "Breeding and Selection",
     description:
       "Breeding stock is carefully selected based on health, genetics, and performance to produce strong and resilient animals.",
   },
@@ -66,17 +66,17 @@ const livestockProduction = [
       "Young animals are raised under close supervision with proper nutrition, vaccinations, and disease prevention measures.",
   },
   {
-    stage: "Growth & Development",
+    stage: "Growth and Development",
     description:
       "Livestock are supported through natural grazing and supplementary feeding to achieve steady and healthy weight gain.",
   },
   {
-    stage: "Conditioning & Fattening",
+    stage: "Conditioning and Fattening",
     description:
       "Targeted feeding programs are introduced to improve muscle development and overall body condition.",
   },
   {
-    stage: "Health Assessment & Slaughter Readiness",
+    stage: "Health Assessment and Slaughter Readiness",
     description:
       "Final veterinary inspections ensure animals meet welfare, quality, and market standards before processing.",
   },
