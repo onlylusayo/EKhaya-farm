@@ -35,8 +35,8 @@ const productCategories = [
       "Value added meat products processed for extended shelf life while maintaining quality and safety.",
     products: [
       { name: "Sausages", image: "/meat-splash-3.jpg" },
-      { name: "Smoked Meat", image: "/meat-splash-4.jpg" },
-      { name: "Dried Meat", image: "/meat-splash-1.jpg" },
+      { name: "corned Meat", image: "/meat-splash-4.jpg" },
+      { name: "Sausages", image: "/meat-splash-1.jpg" },
       { name: "Minced Meat", image: "/meat-splash-2.jpg" },
     ],
   },

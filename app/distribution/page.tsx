@@ -94,7 +94,7 @@ const districts = [
 const distributionFeatures = [
   {
     icon: Truck,
-    title: "Farm-Fresh Delivery",
+    title: "Farm Fresh Delivery",
     description:
       "Daily deliveries from our farms ensure produce reaches stores at peak freshness.",
   },
